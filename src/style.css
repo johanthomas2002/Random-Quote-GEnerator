@@ -1,0 +1,14 @@
+body{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/973/422/436/airplane-4k-background-desktop-wallpaper-preview.jpg');
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.content{
+    margin-top: 250px;
+}
+
+.content .container{
+    border-radius: 10px;
+}
