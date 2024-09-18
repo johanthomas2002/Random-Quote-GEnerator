@@ -32,7 +32,7 @@ function App() {
       <div className='content'>
         <div className="container w-50 p-5" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
           <h3 className='text-light text-center'>{randomQuote}</h3>
-          <h4 className='text-light text-end mt-2'>By:{author}</h4>
+          <h4 className='text-light text-end mt-2'>{author}</h4>
           <div className='text-center mt-5'>
             <Button variant="warning" className='fs-5' onClick={getQuote}>Generate</Button>{' '}
           </div>
