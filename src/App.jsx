@@ -23,21 +23,22 @@ function App() {
   const getQuote = () => {
       const randomNum = Math.floor(Math.random() * quotes.length);
       setRandomQuote(quotes[randomNum].quote);
-      setAuthor(quotes[randomNum].author)
+      setAuthor(quotes[randomNum].author);
   }
 
 
   return (
     <>
-      <div className='content'>
-        <div className="container w-50 p-5" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-          <h3 className='text-light text-center'>{randomQuote}</h3>
-          <h4 className='text-light text-end mt-2'>{author}</h4>
-          <div className='text-center mt-5'>
-            <Button variant="warning" className='fs-5' onClick={getQuote}>Generate</Button>{' '}
-          </div>
-        </div>
-      </div>
+<div className='content'>
+  <div className="container col-10 col-md-8 col-lg-6 p-4 p-md-5 mx-auto" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+    <h3 className='text-light text-center'>{randomQuote}</h3>
+    <h4 className='text-light text-md-end text-center mt-2'>{author}</h4>
+    <div className='text-center mt-4 mt-md-5'>
+      <Button variant="warning" className='fs-5' onClick={getQuote}>Generate</Button>
+    </div>
+  </div>
+</div>
+
     </>
   );
 
